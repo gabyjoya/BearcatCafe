@@ -1,6 +1,6 @@
-<h1>Hello, Blog App User!</h1>
+<h1>Welcome to Bearcat Cafe!</h1>
 <%= link_to 'My Blog', controller: 'articles' %>
-
+<%= image_tag("logo.png", size: "400x400", :alt => "Bearcat Cafe Logo") %>
 <p>
     <% if current_user %>
         Logged in as <%= current_user.username %>
