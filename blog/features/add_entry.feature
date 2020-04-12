@@ -22,6 +22,10 @@ Scenario: As a blogger I want to be able to navigate from the homepage to the ne
  #   Given I am on the homepage
   #  When I click on the "My Blog" link
    # Then I should be on the "Listing articles" page
-   # When I click on the "Show" link
+   # When I click on the "New article" link
+     #Then I should be on the "New Article" page
+     #And I should see the "Title" field
+     #And I should see the "Text" field
+     ###need to be logged in
     #Then I should see the "Commenter" field
     #And I should see the "Body" field
