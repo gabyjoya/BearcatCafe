@@ -14,4 +14,37 @@
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
 
+
+
+
+<h1>Ratings</h1>
+<% @article.ratings.each do |rating| %>
+  <p>
+    <strong>Rater:</strong>
+    <%= rating.rater %>
+  </p>
+ 
+  <p>
+    <strong>Rating:</strong>
+    <%= rating.rate %>
+  </p>
+<% end %>
+
+<h2>Add a rating from 1-5:</h2>
+<%= form_for([@article, @article.ratings.build]) do |f| %>
+  <p>
+    <%= f.label :rater %><br>
+    <%= f.text_field :rater %>
+  </p>
+  <p>
+    <%= f.label :rate %><br>
+    <%= f.text_field :rate %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+
+
 <%= link_to 'Article List', articles_path %>
