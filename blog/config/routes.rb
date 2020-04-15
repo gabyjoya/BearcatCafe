@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
   resources :users
   get 'welcome/index'
+  get 'welcome/menu'
   
   resources :articles do
     resources :comments
