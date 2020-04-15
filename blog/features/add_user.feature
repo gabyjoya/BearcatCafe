@@ -7,7 +7,7 @@ Feature: Add a new blog entry
 Scenario: As a blogger I want to be able to navigate from the homepage to the new user form
     Given I am on the homepage
     When I click on the "Sign Up" link
-    Then I should be on the "New User" page
+    Then I should be on the "Sign Up" page
     And I should see the "First name" field
     And I should see the "Last name" field
     And I should see the "Username" field

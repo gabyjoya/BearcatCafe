@@ -7,7 +7,7 @@ Feature: Add a new Comment entry
 Scenario: As a blogger I want to be able to navigate from the homepage to the new comment form
     Given I am on the homepage
     When I click on the "Sign Up" link
-    Then I should be on the "New User" page
+    Then I should be on the "Sign Up" page
     And I should see the "First name" field
     And I should see the "Last name" field
     And I should see the "Username" field
@@ -23,10 +23,10 @@ Scenario: As a blogger I want to be able to navigate from the homepage to the ne
     When I click on the "Create User" button
     Then I should be on the "User Information" page
     When I click on the "Log In" link
-    Then I should be on the "Login" page
+    Then I should be on the "Log In" page
     And I fill in "Email" with "wharri47@uncc.edu"
     And I fill in "Password" with "gabyjoya123"
-    When I click on the "Login" button
+    When I click on the "Log In" button
     Then I should be on the "Welcome to Bearcat Cafe!" page
     When I click on the "My Blog" link
     Then I should be on the "Listing articles" page

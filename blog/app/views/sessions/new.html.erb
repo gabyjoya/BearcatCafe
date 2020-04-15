@@ -1,5 +1,5 @@
 <p id="alert"><%= alert %></p>
-<h1>Login</h1>
+<h1>Log In</h1>
 <%= form_tag sessions_path do |form| %>
     <div class="field">
         <%= label_tag :email %>
@@ -10,6 +10,9 @@
         <%= password_field_tag :password %>
     </div>
     <div class="action">
-        <%= submit_tag "Login" %>
+        <%= submit_tag "Log In" %>
     </div>
 <% end %>
+
+<%= link_to 'Back', welcome_index_path %>
+<%= link_to "Don't have an account?", signup_path %> 

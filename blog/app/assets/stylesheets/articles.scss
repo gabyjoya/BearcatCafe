@@ -6,7 +6,7 @@ input[type=text] {
     width: 50%;
     padding: 12px 12px;
     border: 2px solid #ccc;
-    background-color: #eae0c8;
+    background-color: #ECECC9;
 }
     
 textarea {
@@ -14,12 +14,12 @@ textarea {
     height: 300px;
     padding: 12px;
     border: 2px solid #ccc;
-    background-color: #eae0c8;
+    background-color: #ECECC9;
     resize: none;
 }
 
 input[type=button], input[type=submit] {
-    background-color: #9acd32;
+    background-color: #85A957;
     float: right;
     border: none;
     color: black;
@@ -27,3 +27,68 @@ input[type=button], input[type=submit] {
     text-decoration: none;
     cursor: pointer;
 }
+
+div {
+  margin: 70px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #ADCD75;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #97A189;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ECECC9;
+  color: black;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  text-align: center;
+  background-color: #ECECC9;
+  padding: 20px;
+}
+
+
