@@ -1,26 +1,28 @@
 <div class="header">
-    <h1>Welcome to Bearcat Cafe!</h1>
+  <h1>Welcome to Bearcat Cafe!</h1>
 </div>
 
-
 <div class="navbar">
-     <% if current_user %>
-        Logged in as <b><%= current_user.username %></b>
-        <i><%= link_to "Log Out", logout_path %></i>
-    <% else %>
-        <%= link_to "Sign Up", signup_path %> 
-        <%= link_to "Log In", login_path %>
-    <% end %>
-   <%= link_to 'My Blog', controller: 'articles' %>
-    <%= link_to "Menu", welcome_menu_path %> 
-     <%= link_to "Animals", welcome_animals_path %>
+   <% if current_user %>
+      Logged in as <b><%= current_user.username %></b>
+      <i><%= link_to "Log Out", logout_path %></i>
+  <% else %>
+      <%= link_to "Sign Up", signup_path %> 
+      <%= link_to "Log In", login_path %>
+  <% end %>
+ <%= link_to 'My Blog', controller: 'articles' %>
+  <%= link_to "Menu", welcome_menu_path %> 
+   <%= link_to "Animals", welcome_animals_path %>
 </div>
 
 
 <div class="main">
-    <h1>About Us</h1>
-    <p>write about what company we are and what not</p>
-    <%= image_tag("logo.png", size: "400x400", :alt => "Bearcat Cafe Logo") %>
+  <h1>About Us</h1>
+  <p>We are Bearcat Cafe! We are a café for visitors to come enjoy fresh, healthy food in a friendly environment. 
+  We are a place to meet and eat while enjoying the best ingredients Charlotte, North Carolina has to offer.
+  You can enjoy a cup of the best freshly roasted coffee that we recieve from Counter Culture along with our menu items. 
+  Ingredients from our menu come from local bakeries and gardens our the Charlotte area hat you know and love. After enjoying a meal or a 
+  good chat with your friends, take a walk in our Gabs Bamboo Garden where you can enjoy the view or our beautiful animals! We have Birds, Pandas,
+  Koalas and more that you can view and see them hang around the garnden. Stop by now and enjoy the view!</p>
+  <%= image_tag("logo.png", size: "400x400", :alt => "Bearcat Cafe Logo") %>
 </div>
- 
-   
