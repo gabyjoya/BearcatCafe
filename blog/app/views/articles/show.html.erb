@@ -2,22 +2,22 @@
     <h1>Title:
     <%= @article.title %></h1>
 </p>
-
-<p>
+<div>
     <strong>Text:</strong>
     <%= @article.text %>
-</p>
+</div>
 
+<h3>Comments</h3>
 <div>
-<h1>Comments</h1>
 <%= render @article.comments %>
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
-</div>
 
+</div>
+<h3>Ratings</h3>
 <div>
-<h1>Ratings</h1>
+
 <%= render @article.ratings %>
 
 <h2>Add a rating from 1-5:</h2>
@@ -25,4 +25,4 @@
 
 </div>
 
-<%= link_to 'Article List', articles_path %>
+<h4><%= link_to 'Article List', articles_path %></h4>
