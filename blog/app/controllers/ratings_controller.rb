@@ -5,6 +5,12 @@ class RatingsController < ApplicationController
         redirect_to article_path(@article)
     end
     
+    def destroy
+        @article = Article.find(params[:article_id])
+        @rating = @article.ratings.find(params[:id])
+        @rating.destroy
+        redirect_to article_path(@article)
+    end
     
     private 
         def rating_params

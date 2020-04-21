@@ -1,10 +1,10 @@
-Feature: Add a new Comment entry
+Feature: Delete a rating entry
 
     As a blogger
-    So that I can contribute to others blogs
-    I want to be able to be comment on articles 
+    So that I can leave the best ratings on the blog 
+    I want to be able to delete a rating entry 
     
-Scenario: As a blogger I want to be able to navigate from the homepage to the new comment form
+Scenario: As a blogger I want to be able to navigate from the homepage to the delete rating form
     Given I am on the homepage
     When I click on the "Sign Up" link
     Then I should be on the "Sign Up" page
@@ -27,7 +27,7 @@ Scenario: As a blogger I want to be able to navigate from the homepage to the ne
     And I fill in "Email" with "wharri47@uncc.edu"
     And I fill in "Password" with "gabyjoya123"
     When I click on the "Log In" button
-    Then I should be on the homepage 
+    Then I should be on the homepage
     When I click on the "My Blog" link
     Then I should be on the "Listing articles" page
     When I click on the "New article" link
@@ -37,9 +37,11 @@ Scenario: As a blogger I want to be able to navigate from the homepage to the ne
     And I fill in "Title" with "Test article"
     And I fill in "Text" with "This is a test"
     When I click on the "Create Article" button
-    Then I should be on the "Comments" page
-    And I should see the "Commenter" field
-    And I should see the "Body" field
-    And I fill in "Commenter" with "gabyj"
-    And I fill in "Body" with "This is a test comment"
-    And I click on the "Create Comment" button
+    Then I should be on the "Ratings" page
+    And I should see the "Rater" field
+    And I should see the "Rate" field
+    And I fill in "Rater" with "gabyj"
+    And I fill in "Rate" with "3"
+    And I click on the "Create Rating" button
+    When I click on the "Destroy Rating" link
+    Then I should not see "3"

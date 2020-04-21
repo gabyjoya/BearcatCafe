@@ -1,10 +1,10 @@
-Feature: Add a new Comment entry
+Feature: Delete a comment entry
 
     As a blogger
-    So that I can contribute to others blogs
-    I want to be able to be comment on articles 
+    So that I can leave the best comments on the blog 
+    I want to be able to delete a comment entry 
     
-Scenario: As a blogger I want to be able to navigate from the homepage to the new comment form
+Scenario: As a blogger I want to be able to navigate from the homepage to the delete comment form
     Given I am on the homepage
     When I click on the "Sign Up" link
     Then I should be on the "Sign Up" page
@@ -27,7 +27,7 @@ Scenario: As a blogger I want to be able to navigate from the homepage to the ne
     And I fill in "Email" with "wharri47@uncc.edu"
     And I fill in "Password" with "gabyjoya123"
     When I click on the "Log In" button
-    Then I should be on the homepage 
+    Then I should be on the homepage
     When I click on the "My Blog" link
     Then I should be on the "Listing articles" page
     When I click on the "New article" link
@@ -43,3 +43,5 @@ Scenario: As a blogger I want to be able to navigate from the homepage to the ne
     And I fill in "Commenter" with "gabyj"
     And I fill in "Body" with "This is a test comment"
     And I click on the "Create Comment" button
+    When I click on the "Destroy Comment" link
+    Then I should not see "This is a test comment"
