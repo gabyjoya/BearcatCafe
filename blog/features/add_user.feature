@@ -1,4 +1,4 @@
-Feature: Add a new blog entry
+Feature: Add a new user
 
     As a blogger
     So that I can easily see and contribute to my blog
